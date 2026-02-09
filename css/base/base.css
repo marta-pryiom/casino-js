@@ -1,0 +1,51 @@
+/* ===== GLOBAL ===== */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family:
+    'Poppins',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-weight: 400;
+  color: var(--color-text-main);
+  background: var(--color-bg-main);
+  line-height: 1.5;
+  margin: 0;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+.page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0f1b3d 0%, #13214d 40%, #0f1b3d 100%);
+}
+
+/* ===== LAYOUT ===== */
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.main {
+  padding: 40px 0;
+}
+
+.section {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}

@@ -1,0 +1,60 @@
+.footer {
+  background: #0f1b3d; /* темно-синій фон */
+  padding: 40px 0;
+  color: #1e293b;
+}
+
+/* білий блок */
+.footer__box {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* текст */
+.footer__description {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+/* 18+ */
+.footer__age {
+  min-width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid #0f1b3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* warning */
+.footer__warning {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+/* нижня частина */
+.footer__bottom {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* логотипи */
+.footer__logo {
+  background: #1e2a57;
+  color: white;
+  padding: 10px 24px;
+  font-weight: 600;
+  border-radius: 4px;
+}

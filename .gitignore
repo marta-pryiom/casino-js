@@ -1,0 +1,14 @@
+# system
+.DS_Store
+Thumbs.db
+
+# editors
+.vscode
+.idea
+
+# logs
+*.log
+
+# node (якщо раптом зʼявиться)
+node_modules
+dist

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casino</title>
+    <link rel="stylesheet" href="css/base/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="container header__container">
+        <a href="index.html" class="header__logo">LOGO</a>
+
+        <nav class="header__nav nav" id="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="bonuses.html">
+                <svg class="icon" aria-hidden="true" width="24" height="24">
+                  <use href="/img/icons/Gift.svg"></use>
+                </svg>
+                Bonuses</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="app.html">
+                <svg class="icon" aria-hidden="true" width="24" height="24">
+                  <use href="/img/icons/iPhone.svg"></use>
+                </svg>
+                App</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Live</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Sports</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">More</a>
+            </li>
+          </ul>
+          <div class="nav__actions-placeholder"></div>
+        </nav>
+        <div class="language-selector">
+          <button class="language-selector__button">
+            <img
+              src="/img/icons/flag.svg"
+              alt="AT"
+              class="language-selector__flag"
+            />
+            <span class="language-selector__code">AT</span>
+            <svg
+              class="language-selector__arrow"
+              aria-hidden="true"
+              width="24"
+              height="24"
+            >
+              <use href="/img/icons/arrow-down.svg"></use>
+            </svg>
+          </button>
+
+          <ul class="language-selector__dropdown">
+            <li class="language-selector__item" data-lang="EN">
+              <img
+                src="/img/icons/flag.svg"
+                alt="EN"
+                class="language-selector__flag"
+              />
+              EN
+            </li>
+            <li class="language-selector__item" data-lang="DE">
+              <img
+                src="/img/icons/flag.svg"
+                alt="DE"
+                class="language-selector__flag"
+              />
+              DE
+            </li>
+          </ul>
+        </div>
+        <div class="header__actions">
+          <button class="button button--primary">Sign up</button>
+          <button class="button button--secondary">Log in</button>
+        </div>
+        <!-- Menu -->
+        <button class="burger" id="burger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- <div class="header__menu">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li><a class="nav__link" href="#">Home</a></li>
+              <li><a class="nav__link" href="#">Bonuses</a></li>
+              <li><a class="nav__link" href="#">Games</a></li>
+            </ul>
+          </nav>
+
+          <div class="auth">
+            <button class="auth__login">Log in</button>
+            <button class="auth__signup">Sign up</button>
+          </div>
+        </div> -->
+        <!-- Menu -->
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="section">HERO</section>
+
+        <section class="section">WELCOME BONUS</section>
+
+        <section class="section">FAQ</section>
+      </div>
+    </main>
+
+    <!-- <main>
+      <p>Тут буде основний контент.</p>
+    </main>
+
+    <footer>
+      <p>2026 Мій проект</p>
+    </footer> -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__box">
+          <p class="footer__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
+            egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper
+            volutpat.
+          </p>
+
+          <div class="footer__age">18+</div>
+        </div>
+
+        <p class="footer__warning">
+          Gambling can be addictive. Play responsibly.
+        </p>
+
+        <div class="footer__bottom">
+          <div class="footer__logo">LOGO</div>
+          <div class="footer__logo">LOGO</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <!-- <script src="js/header.js"></script> -->
+  </body>
+</html>

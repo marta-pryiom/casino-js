@@ -1,0 +1,14 @@
+:root {
+  --radius: 8px;
+  /* --color-text-main: #FCFCFC;  додати чорний для тексту*/
+  --color-text-secondary: #FCFCFC;
+  --color-orange: #ec622b;
+  --color-green: #0fa810;
+  --color-primary: #4f46e5;
+  --color-bg-header: #192a32;
+  --color-logo-bg: #141e55;
+  --color-background: #f9fafb;
+  --color-btn-bg: #1a3769;
+  --color-btn: #fcfcfc;
+  --color-btn-hover: #1a3769b5; /*additional color*/
+}

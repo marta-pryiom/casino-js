@@ -1,0 +1,229 @@
+/* ================= HEADER ================= */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-bg-header);
+  color: white;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20px;
+  width: 120px;
+  height: 55px;
+  color: white;
+  background-color: var(--color-logo-bg);
+  text-decoration: none;
+}
+
+/* ================= NAV ================= */
+.nav__list {
+  font-weight: 600;
+  display: flex;
+  gap: 21px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  background-color: var(--color-btn-bg);
+  border-radius: 16px;
+  padding: 12px 24px;
+}
+
+.nav__item:hover {
+  background-color: var(--color-btn-hover);
+}
+
+.nav__item:hover .nav__link {
+  color: var(--color-primary);
+}
+
+.nav__link {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s;
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+
+/* ================= ACTIONS ================= */
+.header__actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* ================= LANGUAGE ================= */
+.language-selector {
+  position: relative;
+  display: inline-block;
+  z-index: 5;
+}
+
+.language-selector__button {
+  font-family:
+    'Poppins',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--color-btn-bg);
+  color: var(--color-text-secondary);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-height: 48px;
+}
+
+.language-selector__button:hover {
+  background-color: var(--color-btn-hover);
+}
+
+.language-selector__arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.language-selector__button.open .language-selector__arrow {
+  transform: rotate(180deg);
+}
+
+.language-selector__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--color-logo-bg);
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0 0;
+  border-radius: 6px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    max-height 0.3s ease,
+    opacity 0.3s ease;
+  z-index: 10;
+}
+
+.language-selector__dropdown.open {
+  max-height: 200px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.language-selector__item {
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 110px;
+}
+
+.language-selector__item:hover {
+  background-color: var(--color-btn-hover);
+}
+
+/* ================= BURGER ================= */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background: var(--color-background);
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.burger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1160px) {
+  .nav__list {
+    gap: 8px;
+  }
+  .nav__item {
+    padding: 12px 12px;
+  }
+}
+
+@media (max-width: 980px) {
+  .nav__link .icon {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+
+  .header__nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .header__nav.active {
+    display: block;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
+
+  .nav__item {
+    border-radius: 0;
+    border: 1px solid #cccccc3b;
+  }
+
+  .nav__actions-placeholder .header__actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px 30px;
+    background-color: var(--color-bg-header);
+  }
+}

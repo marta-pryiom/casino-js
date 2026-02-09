@@ -1,0 +1,36 @@
+.button {
+  font-family:
+    'Poppins',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 32px;
+  border-radius: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  max-height: 48px;
+  border: none;
+}
+
+/* @media (max-width: 768px) {
+  .nav__link .icon {
+    display: none;
+  }
+} */
+
+.button--primary {
+  background: var(--color-orange);
+  color: var(--color-text-secondary);
+}
+.button--secondary {
+  background: var(--color-green);
+  color: var(--color-text-secondary);
+}
+
+.button--outline {
+  background: transparent;
+  border: 1px solid #334155;
+  color: white;
+}
