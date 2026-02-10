@@ -54,8 +54,7 @@
 }
 
 .hero__text {
-  font-size: 24px;
-  font-weight: 700;
+  color: var(--color-white);
   text-align: left;
   margin-bottom: 16px;
   text-transform: uppercase;
@@ -136,8 +135,6 @@
 }
 
 .bonus__text {
-  font-size: 40px;
-  font-weight: 700;
   text-align: left;
   margin: 90px 0 16px 0;
   text-transform: uppercase;
@@ -157,8 +154,6 @@
   background-color: var(--color-white);
 }
 .value__title {
-  font-size: 40px;
-  font-weight: 700;
   text-align: left;
   margin: 0 0 16px;
 }
@@ -199,7 +194,7 @@
 .facts__item {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   padding: 8px 16px;
   border-bottom: 2px solid var(--color-border);
 }
@@ -284,8 +279,6 @@
 }
 
 .feedback__title {
-  font-size: 40px;
-  font-weight: 700;
   text-transform: uppercase;
   color: var(--color-bg-header);
   line-height: 1.2;
@@ -316,10 +309,11 @@
 
 .feedback__list {
   display: flex;
-  gap: 24px;
+  gap: 6%;
   overflow-x: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
+  margin-top: 14px;
 }
 
 .feedback__list::-webkit-scrollbar {
@@ -327,7 +321,7 @@
 }
 
 .feedback-card {
-  width: 45%;
+  width: 41%;
   display: flex;
   gap: 20px;
   padding: 28px;
@@ -378,8 +372,6 @@
 }
 
 .support__title {
-  font-size: 40px;
-  font-weight: 700;
   color: var(--color-bg-header);
   margin: 0;
 }
@@ -397,6 +389,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  gap: 8px;
   width: 50%;
   margin-bottom: 35px;
 }
@@ -407,6 +400,11 @@
 .support__text {
   color-scheme: var(--color-green);
 }
+
+.support__icon {
+  display: none;
+}
+
 .faq__list {
   display: flex;
   flex-direction: column;
@@ -578,13 +576,26 @@
 }
 
 /* ================= RESPONSIVE ================= */
+@media (max-width: 600px) {
+  .hero {
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.2) 50%,
+        rgba(0, 0, 0, 0.7) 100%
+      ),
+      url(../../img/icons/first.jpg);
+    background-position: right;
+  }
+}
+
 @media (max-width: 768px) {
   .feedback-card {
     min-width: 80%;
   }
-
-  .feedback__title {
-    font-size: 28px;
+  .facts__item {
+    flex-direction: column;
   }
 }
 
@@ -610,14 +621,12 @@
   .starts__icon {
     display: block;
   }
-  .facts__item {
-    flex-direction: unset;
-  }
-  .support__title {
-    font-size: 48px;
-  }
   .support__btns {
+    gap: 0;
     flex-direction: unset;
+  }
+  .support__icon {
+    display: block;
   }
   .review__title {
     font-size: 48px;

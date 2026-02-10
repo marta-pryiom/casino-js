@@ -179,16 +179,13 @@
 }
 
 /* ================= RESPONSIVE ================= */
-@media (max-width: 1160px) {
+@media (max-width: 1439px) {
   .nav__list {
     gap: 8px;
   }
   .nav__item {
     padding: 12px 12px;
   }
-}
-
-@media (max-width: 980px) {
   .nav__link .icon {
     display: none;
   }

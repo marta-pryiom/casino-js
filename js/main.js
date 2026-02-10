@@ -60,7 +60,7 @@ document.addEventListener('click', e => {
   const headerContainer = document.querySelector('.header__container');
   const body = document.body;
 
-  const DESKTOP_WIDTH = 980;
+  const DESKTOP_WIDTH = 1439;
 
   if (!burger || !nav || !actions || !placeholder || !headerContainer) return;
 
