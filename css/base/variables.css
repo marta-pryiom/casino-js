@@ -1,5 +1,4 @@
 :root {
-  /* --color-text-main: #FCFCFC;  додати чорний для тексту*/
   --color-white: #ffffff;
   --color-black: #000000;
   --color-text-secondary: #fcfcfc;
@@ -7,6 +6,7 @@
   --color-dark-orange: #c75528;
   --color-dark-green: #0d900d;
   --color-blue: #80bef8;
+  --color-light-blue: #e2eaf7;
   --color-grey: #7c7c7c;
   --color-light-grey: #dfe8f6;
   --color-green: #0fa810;
@@ -17,7 +17,7 @@
   --color-btn-bg: #1a3769;
   --color-btn: #fcfcfc;
   --color-card-bg: #f6f6f6;
-  --color-btn-hover: #1a3769b5; /*additional color*/
+  --color-btn-hover: #1a3769b5;
   --color-shadow: #0a626a26;
   --color-border: rgba(119, 119, 119, 0.5);
 }
