@@ -1,60 +1,45 @@
 .footer {
-  background: #0f1b3d; /* темно-синій фон */
-  padding: 40px 0;
-  color: #1e293b;
+  background: var(--color-white);
+  padding: 35px 20px;
+  color: var(--color-bg-header);
+  border-radius: 6px;
 }
 
-/* білий блок */
-.footer__box {
-  background: white;
-  border-radius: 8px;
-  padding: 24px;
+.footer__content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-/* текст */
-.footer__description {
-  font-size: 14px;
-  line-height: 1.6;
-  max-width: 800px;
+.footer__text {
+  font-size: 16px;
+  font-weight: 400;
+  width: 90%;
 }
 
-/* 18+ */
-.footer__age {
-  min-width: 56px;
-  height: 56px;
+.footer__icon {
+  width: 85px;
+  height: 85px;
   border-radius: 50%;
-  border: 2px solid #0f1b3d;
+  font-size: 32px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  font-size: 16px;
+  border: 1px solid var(--color-bg-header);
 }
 
-/* warning */
-.footer__warning {
-  margin-top: 16px;
-  font-size: 13px;
-  color: #cbd5e1;
-}
-
-/* нижня частина */
 .footer__bottom {
-  margin-top: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
-/* логотипи */
-.footer__logo {
-  background: #1e2a57;
-  color: white;
-  padding: 10px 24px;
-  font-weight: 600;
-  border-radius: 4px;
+/* ================= RESPONSIVE ================= */
+@media (min-width: 1024px) {
+  .footer__content {
+    flex-direction: unset;
+  }
 }

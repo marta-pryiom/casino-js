@@ -115,3 +115,19 @@ document.addEventListener('click', e => {
   window.addEventListener('resize', moveActions);
   moveActions();
 })();
+//faq accordion logic
+const faqItems = document.querySelectorAll('.faq__item');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq__question');
+
+  question.addEventListener('click', () => {
+    const isActive = item.classList.contains('faq__item--active');
+
+    faqItems.forEach(i => i.classList.remove('faq__item--active'));
+
+    if (!isActive) {
+      item.classList.add('faq__item--active');
+    }
+  });
+});

@@ -1,12 +1,14 @@
 :root {
   /* --color-text-main: #FCFCFC;  додати чорний для тексту*/
   --color-white: #ffffff;
+  --color-black: #000000;
   --color-text-secondary: #fcfcfc;
   --color-orange: #ec622b;
   --color-dark-orange: #c75528;
   --color-dark-green: #0d900d;
-  --color_blue: #80bef8;
-  --color--grey: #7c7c7c;
+  --color-blue: #80bef8;
+  --color-grey: #7c7c7c;
+  --color-light-grey: #dfe8f6;
   --color-green: #0fa810;
   --color-primary: #4f46e5;
   --color-bg-header: #192a32;
@@ -17,4 +19,5 @@
   --color-card-bg: #f6f6f6;
   --color-btn-hover: #1a3769b5; /*additional color*/
   --color-shadow: #0a626a26;
+  --color-border: rgba(119, 119, 119, 0.5);
 }
