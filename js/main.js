@@ -131,3 +131,26 @@ faqItems.forEach(item => {
     }
   });
 });
+//feedback slider logic
+
+const list = document.querySelector('.feedback__list');
+const prevBtn = document.querySelector('.feedback__arrow--prev');
+const nextBtn = document.querySelector('.feedback__arrow--next');
+
+function getStep() {
+  return list.clientWidth;
+}
+
+nextBtn.addEventListener('click', () => {
+  list.scrollBy({
+    left: getStep(),
+    behavior: 'smooth',
+  });
+});
+
+prevBtn.addEventListener('click', () => {
+  list.scrollBy({
+    left: -getStep(),
+    behavior: 'smooth',
+  });
+});
