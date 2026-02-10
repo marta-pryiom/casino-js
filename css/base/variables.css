@@ -1,8 +1,12 @@
 :root {
-  --radius: 8px;
   /* --color-text-main: #FCFCFC;  додати чорний для тексту*/
-  --color-text-secondary: #FCFCFC;
+  --color-white: #ffffff;
+  --color-text-secondary: #fcfcfc;
   --color-orange: #ec622b;
+  --color-dark-orange: #c75528;
+  --color-dark-green: #0d900d;
+  --color_blue: #80bef8;
+  --color--grey: #7c7c7c;
   --color-green: #0fa810;
   --color-primary: #4f46e5;
   --color-bg-header: #192a32;
@@ -10,5 +14,7 @@
   --color-background: #f9fafb;
   --color-btn-bg: #1a3769;
   --color-btn: #fcfcfc;
+  --color-card-bg: #f6f6f6;
   --color-btn-hover: #1a3769b5; /*additional color*/
+  --color-shadow: #0a626a26;
 }

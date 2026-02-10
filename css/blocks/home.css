@@ -1,0 +1,321 @@
+.container__text {
+  color: var(--color-bg-header);
+  font-size: 16px;
+}
+
+.container__info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.container__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: brown;
+  /* width: 100%; */
+}
+
+.mobile-btn {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-white);
+  min-width: 179px;
+  height: 48px;
+  font-size: 16px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 16px;
+  background-color: var(--color-btn-bg);
+}
+
+.hero {
+  background-image: url('../../img/icons/first.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 6px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  color: var(--color-white);
+  text-align: center;
+  padding: 23px;
+}
+.hero__top {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: baseline;
+  gap: 8px;
+}
+
+.hero__text {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.hero__subtext {
+  font-size: 6px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-left: 70px;
+  text-align: left;
+}
+
+.hero__boldtext {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cards {
+  padding: 32px 20px;
+  background-color: var(--color-white);
+  border-radius: 6px;
+}
+
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.cards__item {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 98px;
+  height: 98px;
+  background-color: var(--color-card-bg);
+  border-radius: 6px;
+  box-shadow: 0px 0.5px 6px 0px var(--color-shadow);
+  border-top: 4px solid var(--color-card-bg);
+}
+
+.cards__item:hover {
+  background-color: var(--color-white);
+  border-top: 4px solid var(--color-green);
+
+  box-shadow: 0px 1px 12px 0px var(--color-shadow);
+}
+
+.cards__text {
+  font-size: 10px;
+  font-weight: 600;
+  max-width: 65px;
+  text-align: center;
+}
+
+.bonus {
+  background-image: url('../../img/icons/second.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 6px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  color: var(--color-bg-header);
+  text-align: center;
+  padding: 20px;
+}
+
+.bonus__text {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
+  margin: 90px 0 16px 0;
+  text-transform: uppercase;
+}
+
+.bonus__subtext {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+}
+
+.value {
+  padding: 25px 24px;
+  border-radius: 6px;
+  background-color: var(--color-white);
+}
+.value__title {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0 0 16px;
+}
+.starts__list {
+  margin: 0;
+  padding: 0;
+}
+.starts__item {
+  background-color: var(--color_blue);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+.starts__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-white);
+  text-transform: uppercase;
+  margin: 0;
+}
+.starts__info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.facts__list {
+  list-style-type: none;
+  margin: 0;
+}
+.facts__title {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.right-section {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.sports {
+  border-radius: 6px;
+  max-width: 420px;
+}
+.sports__top {
+  background-color: var(--color-bg-header);
+  padding: 20px 22px;
+}
+.sports__list {
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  margin: 0;
+  list-style-type: none;
+  border-radius: 0 0 6px 6px;
+}
+
+.sports__item {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+}
+
+.sports__item:hover {
+  background-color: var(--color-bg-header);
+  color: var(--color--white);
+}
+
+.sports__text {
+  color: var(--color--grey);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sports__item:hover .sports__text {
+  color: var(--color--white);
+}
+.ad {
+  /* border-radius: 6px; */
+  /* min-width: 295px; */
+  max-width: 420px;
+}
+.ad__top {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-header);
+  padding: 20px 22px;
+  margin: 0;
+  text-transform: uppercase;
+  border-radius: 6px 6px 0 0;
+}
+.ad__cards {
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  background-color: var(--color-white);
+  list-style-type: none;
+  border-radius: 0 0 6px 6px;
+}
+.ad__item {
+  display: flex;
+  align-items: center;
+  min-width: 250px;
+  max-height: 130px;
+  gap: 8px;
+}
+.ad__icon {
+  transition:
+    filter 0.2s ease,
+    transform 0.2s ease;
+}
+.ad__icon:hover {
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.45));
+  transform: translateY(-1px);
+}
+.button__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (min-width: 1024px) {
+  .container__info {
+    flex-direction: unset;
+  }
+  .hero__text {
+    font-size: 40px;
+  }
+  .value__title {
+    font-size: 48px;
+  }
+  .facts__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1920px) {
+  .container--home {
+    flex-direction: column;
+  }
+  .container__content {
+    width: 100%;
+  }
+  .right-section {
+    display: none;
+  }
+}
