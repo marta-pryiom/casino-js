@@ -13,6 +13,7 @@
   max-height: 48px;
   border: none;
   letter-spacing: -0.01em;
+  min-width: 130px;
 }
 
 .button--sports {
@@ -45,6 +46,6 @@
 
 .button--outline {
   border: 1px solid var(--color-white);
-  color: white;
+  color: var(--color-white);
   width: 214px;
 }

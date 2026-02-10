@@ -31,22 +31,21 @@ body {
     -apple-system,
     sans-serif;
   font-weight: 400;
-  /* color: var(--color-text-main); */
   line-height: 1.5;
   margin: 0;
   transition: opacity 0.3s ease;
   opacity: 1;
 }
-body::after {
+/* body::after {
   content: '';
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 83, 123, 0.2); /* прозорий білий шар */
+  background: rgba(0, 83, 123, 0.2); 
   pointer-events: none;
-}
+} */
 
 body.fade-out {
   opacity: 0;
@@ -56,23 +55,14 @@ body.menu-open {
   overflow: hidden;
 }
 
-.page {
-  /* min-height: 100vh; */
-  /* background: linear-gradient(180deg, #0f1b3d 0%, #13214d 40%, #0f1b3d 100%); */
-}
-
 /* ===== LAYOUT ===== */
 
 .container {
   display: flex;
-  /* justify-content: center; */
   gap: 20px;
   max-width: 80%;
   margin: 0 auto;
-  /* margin: 0; */
-
   padding: 0 16px;
-  background-color: blueviolet;
 }
 .container__section {
   padding: 25px 24px;
@@ -83,5 +73,4 @@ body.menu-open {
 .main {
   padding: 20px 0;
   margin: 0 auto;
-  /* min-height: 90vh; ЗАБРАТИ ПІЗНІШЕ */
 }
